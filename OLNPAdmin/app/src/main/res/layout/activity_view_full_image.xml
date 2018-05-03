@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#33DAFF"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.mgr.cse.olnp.ViewFullImage">
+
+
+    <ImageView
+        android:id="@+id/imageViewFull"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dept"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewFull"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dip"
+        android:textStyle="bold"
+        android:textColor="#000033"
+        android:paddingTop="15dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:paddingTop="15dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/dept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/black"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/uploadtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/black"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/authorname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="22dp"
+        android:textColor="@color/black"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/authorname"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/background_signup"
+        android:clickable="true"
+        android:onClick="publishData"
+        android:text="publish"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button6"
+        android:layout_alignBottom="@+id/button6"
+        android:layout_alignEnd="@+id/authorname"
+        android:background="@drawable/background_signup"
+        android:text="Delete"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+
+</RelativeLayout>
+
+
+
+
+
+
+

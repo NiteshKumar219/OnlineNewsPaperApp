@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DAF7A6"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageDownloaded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/abc_ic_menu_copy_mtrl_am_alpha" />
+
+        <TextView
+            android:id="@+id/dtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/imageDownloaded"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000208"
+            android:ellipsize="marquee"
+            android:maxLines="2"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/dcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dtitle"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imageDownloaded"
+            android:text=""
+            android:textColor="#000208"
+            android:ellipsize="marquee"
+            android:maxLines="4"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mgr.cse.olnp.AdmiCont"
+    android:background="@drawable/new_login_gradients">
+
+
+    <ImageView
+        android:layout_width="340dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/line"/>
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/background_signup"
+        android:onClick="Uplodenews"
+        android:text="@string/uplode_news"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/background_signup"
+        android:onClick="ViewList"
+        android:text="View &amp; Publish &amp; Delete"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="282dp" />
+</RelativeLayout>
